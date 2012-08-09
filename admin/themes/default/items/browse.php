@@ -123,17 +123,17 @@ head(array('title'=>$pageTitle,'content_class' => 'horizontal-nav', 'bodyclass'=
         <thead>
             <tr>
                 <?php if (has_permission('Items', 'edit')): ?>
-                <th id="batch-edit-heading"><?php echo __('Select'); ?></th>
+               <th id="batch-edit-heading"><?php echo __('Select'); ?></th>
                 <?php endif; ?>
             <?php
-            $browseHeadings[__('Title')] = 'Dublin Core,Title';
-            $browseHeadings[__('Creator')] = 'Dublin Core,Creator';
-            $browseHeadings[__('Type')] = null;
+          $browseHeadings[__('Title')] = 'Dublin Core,Title';
+           $browseHeadings[__('Creator')] = 'Dublin Core,Creator';
+           $browseHeadings[__('Type')] = null;
             $browseHeadings[__('Public')]  = 'public';
             $browseHeadings[__('Featured')] = 'featured';
             $browseHeadings[__('Date Added')] = 'added';
             echo browse_headings($browseHeadings); ?>
-            </tr>
+           </tr>
         </thead>
         <tbody>
     <?php $key = 0; ?>
@@ -144,7 +144,7 @@ head(array('title'=>$pageTitle,'content_class' => 'horizontal-nav', 'bodyclass'=
         <td class="batch-edit-check" scope="row"><input type="checkbox" name="items[]" value="<?php echo $id; ?>" /></td>
         <?php endif; ?>
         <td class="item-info">
-            <span class="title"><?php echo link_to_item(); ?></span>
+            <span class="title"><?php echo link_to_item(item('BeatlesLive','Title')); ?></span>
             <ul class="action-links group">
                 <?php if (has_permission($item, 'edit')): ?>
                 <li><?php echo link_to_item(__('Edit'), array(), 'edit'); ?></li>

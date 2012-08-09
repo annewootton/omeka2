@@ -1,5 +1,5 @@
 <?php    
-    $itemTitle = strip_formatting(item('Dublin Core', 'Title'));
+    $itemTitle = strip_formatting(item('BeatlesLive', 'Title'));
     if ($itemTitle != '' && $itemTitle != __('[Untitled]')) {
         $itemTitle = ': &quot;' . $itemTitle . '&quot; ';
     } else {
@@ -43,7 +43,7 @@ jQuery(document).ready(function () {
 </div>
 
 <div id="core-metadata" class="showitem">
-<?php echo show_item_metadata(array('show_empty_elements' => true)); ?>
+<?php echo show_item_metadata(array('show_element_sets' => array('BeatlesLive'))); ?>	
 </div>
 
 <?php fire_plugin_hook('admin_append_to_items_show_primary', $item); ?>

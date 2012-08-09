@@ -10,7 +10,7 @@
 			</div>
 		<?php endif; ?>
 
-		<!--  The following function prints all the the metadata associated with an item: Dublin Core, extra element sets, etc. See http://omeka.org/codex or the examples on items/browse for information on how to print only select metadata fields. -->
+		<!--  The following function prints all the the metadata associated with an item: Beatles Live, extra element sets, etc. See http://omeka.org/codex or the examples on items/browse for information on how to print only select metadata fields. -->
 		<?php echo show_item_metadata(array('show_element_sets' => array('BeatlesLive'))); ?>	
 		
 	    <!-- The following returns all of the files associated with an item. -->
