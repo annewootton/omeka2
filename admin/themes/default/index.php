@@ -94,7 +94,7 @@ head(array('bodyclass'=>'index primary-secondary', 'title'=>$pageTitle)); ?>
                     <?php $key = 0; ?>
                     <?php while(loop_items()): ?>
                         <li class="<?php echo is_odd($key++) ? 'even' : 'odd'; ?>">
-                            <?php echo link_to_item();?>
+                            <?php echo link_to_item(item('BeatlesLive', 'Title'));?>
                         </li>   
                     <?php endwhile; ?>
                 </ul>
