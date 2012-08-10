@@ -30,7 +30,7 @@
     <?php while (loop_items_in_collection()): ?>
 	<div class="item-entry">
 		    
-		<h3><?php echo link_to_item(item('Dublin Core', 'Title', array('snippet'=>20)), array('class'=>'permalink')); ?></h3>
+		<h3><?php echo link_to_item(item('BeatlesLive', 'Title', array('snippet'=>20)), array('class'=>'permalink')); ?></h3>
 
 		<?php if (item_has_thumbnail()): ?>
 			<div class="item-img">
@@ -38,7 +38,7 @@
 			</div>
 		<?php else: ?>
 			<div class="item-img">
-				<?php echo link_to_item("<img src='themes/easy-colour/images/no-img.jpg' alt='no image available'/>") ?>
+				<?php echo link_to_item("<img src='themes/BeatlesLiveTheme/images/no-img.jpg' alt='no image available'/>") ?>
 			</div>
 		<?php endif; ?>
 
@@ -46,7 +46,7 @@
 			<div class="item-description">
 				<p><?php echo $text; ?></p>
 			</div>		
-		<?php elseif ($description = item('Dublin Core', 'Description', array('snippet'=>100))): ?>
+		<?php elseif ($description = item('BeatlesLive', 'Description', array('snippet'=>100))): ?>
 			<div class="item-description">
 				<?php echo $description; ?>
 			</div>
