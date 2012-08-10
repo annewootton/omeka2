@@ -1,7 +1,4 @@
 <?php
-    include('../Omeka_Output_Xml_PopupItem.php');
-?>
-
-<?php
-$omekaXml = new Omeka_Output_Xml_Item($item, 'item');
+  include(THEME_DIR . '/BeatlesLiveTheme/outputs/Omeka_Output_Xml_PopupItem.php');
+$omekaXml = new Omeka_Output_Xml_PopupItem($item, 'item');
 echo $omekaXml->getDoc()->saveXML();
