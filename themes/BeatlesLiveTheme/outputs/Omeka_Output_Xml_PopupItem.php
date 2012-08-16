@@ -1,3 +1,4 @@
+<?php
 class Omeka_Output_Xml_PopupItem extends Omeka_Output_Xml_Item
 {
 

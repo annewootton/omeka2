@@ -6,7 +6,7 @@
  * @package Contribution
  */
 
-$head = array('title' => 'Share Your Memory',
+$head = array('title' => 'Share',
               'bodyclass' => 'contribution');
 head($head); ?>
 <?php echo js('contribution-public-form'); ?>
@@ -23,8 +23,8 @@ enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); 
     <form method="post" action="" enctype="multipart/form-data">
         <fieldset id="contribution-item-metadata">
             <div class="inputs">
-                <label for="contribution-type">What type of item do you want to contribute?</label>
-                <div>If you would like to contribute a link to a video, please select "Moving Image" and paste your URL on the following page.</div>
+                <label for="contribution-type">What type of item do you want to share?</label>
+                <div>If you would like to contribute a link to a video, please select "Video" and paste your URL on the following page.</div>
                 <?php echo contribution_select_type(array( 'name' => 'contribution_type', 'id' => 'contribution-type'), $_POST['contribution_type']); ?>
                 <input type="submit" name="submit-type" id="submit-type" value="Select" />
             </div>

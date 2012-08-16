@@ -288,7 +288,7 @@ class ContributionPlugin
      */
     public function publicNavigationMain($nav)
     {
-        $nav['Share Your Memory'] = contribution_contribute_url();
+        $nav['Share'] = contribution_contribute_url();
         return $nav;
     }
     

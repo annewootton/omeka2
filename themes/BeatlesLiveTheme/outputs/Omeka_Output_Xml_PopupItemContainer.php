@@ -1,3 +1,5 @@
+<?php
+
 class Omeka_Output_Xml_PopupItemContainer extends Omeka_Output_Xml_ItemContainer
 {
 

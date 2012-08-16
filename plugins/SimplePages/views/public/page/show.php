@@ -20,8 +20,5 @@ if (simple_pages_is_home_page(get_current_simple_page())) {
     ?>
 </div>
 <?php if (!simple_pages_is_home_page(get_current_simple_page())): ?>
-<div id="secondary">
-    <?php echo simple_pages_navigation(); ?>
-</div>
 <?php endif; ?>
 <?php echo foot(); ?>
