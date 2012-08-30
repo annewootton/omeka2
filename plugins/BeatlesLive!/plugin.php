@@ -1,8 +1,8 @@
 <?php
 add_plugin_hook('install', 'install');
-add_filter('define_response_contexts', 'pbcoreOutputReponseContext');
-add_filter('define_action_contexts', 'pbcoreOutputActionContext');
-add_plugin_hook('public_theme_header', 'pbcoreThemeHeader');
+//add_filter('define_response_contexts', 'pbcoreOutputReponseContext');
+//add_filter('define_action_contexts', 'pbcoreOutputActionContext');
+//add_plugin_hook('public_theme_header', 'pbcoreThemeHeader');
 
 function install() {
 	$elementSetMetadata = array(
@@ -52,10 +52,10 @@ function install() {
 			'data_type'   => 'Tiny Text',
 		),
 		
-	//Beatles Live! Creator, if desired	
+	//Beatles Live! Original Format
 		array(
-			'label' => 'Creator', 
-			'name'  => 'Creator',
+			'label' => 'Original Format', 
+			'name'  => 'Original Format',
 			'data_type'   => 'Tiny Text',
 		),
 	);

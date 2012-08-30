@@ -25,6 +25,7 @@ enableContributionAjaxForm(<?php echo js_escape(uri('contribution/type-form')); 
             <div class="inputs">
                 <label for="contribution-type">What type of item do you want to share?</label>
                 <div>If you would like to contribute a link to a video, please select "Video" and paste your URL on the following page.</div>
+                <div>If you would like to share your media with us outside of this website, please contact us at beatlesliveteam@gmail.com.</div>
                 <?php echo contribution_select_type(array( 'name' => 'contribution_type', 'id' => 'contribution-type'), $_POST['contribution_type']); ?>
                 <input type="submit" name="submit-type" id="submit-type" value="Select" />
             </div>
